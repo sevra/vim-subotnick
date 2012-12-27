@@ -248,6 +248,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
    let s:pink        = 'e8507b'
    let s:lime        = '7bdf00'
    let s:tomato      = 'f24c00'
+   let s:orange      = 'e87150'
    " }}}
 
 
@@ -302,8 +303,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Comment", s:darkgrey, "", "")
     call <SID>X("Type", s:mediumgrey, "", "")
     call <SID>X("Error", s:tomato, s:black, "bold")
-    call <SID>X("Identifier", s:lime, "", "")
-    call <SID>X("Label", s:mint, "", "")
+    call <SID>X("Identifier", s:mint, "", "")
+    call <SID>X("Label", s:lime, "", "")
 
     " Shell Highlighting
     call <SID>X("shVariable", s:pink, "", "")
@@ -313,6 +314,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " Asembly Hightlighting
     call <SID>X("asmIdentifier", s:turquoise, "", "")
 
+    " Objective-C Highlighting
+    call <SID>X("objcMethodCall", s:pink, "", "")
+    call <SID>X("objcInstMethod", s:pink, "", "")
+    call <SID>X("objcFactMethod", s:pink, "", "")
+   
 	 " Lua Highlighting
     call <SID>X("luaTable", s:pink, "", "bold")
     call <SID>X("luaFunc", s:mint, "", "")
